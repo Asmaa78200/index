@@ -1,0 +1,45 @@
+/*  header and navigation menu responsive */
+@media screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+    header #en-tete {
+        justify-content: center;
+    }
+    header #nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header #nav li {
+        margin: 10px 0;
+    }
+/*  the images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*  the main content responsive */
+#main-content {
+    margin-top: 60px;
+}
+#main-content h2 {
+    font-size: 28px;
+}
+/*  the carte section responsive */
+.Carte {
+    margin-bottom: 10px;
+}
+.Carte h3 {
+    font-size: 20px;
+}
+.Carte h4 {
+    font-size: 18px;
+}
+.Carte p {
+    font-size: 16px;
+}
+/*  the footer responsive */
+footer {
+    padding: 5px;
+}
+}

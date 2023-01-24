@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+        <title>CHEZ PIPPO | Site officiel, réservation et commande en ligne</title>
+<meta name="description" content="Bienvenue sur le site de Chez Pippo à Paris. Consultez de vrais avis de vrais clients et réservez gratuitement une table. Réponse immédiate.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+	<link rel="icon" type="image/x-icon" href="https://chezpippo.com/assets/images/favicon.png">
+<link rel="stylesheet" type="text/css" href="bar_fichiers/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bar_fichiers/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bar_fichiers/main-white.min.css">
+<script src="bar_fichiers/jquery-2.1.3.min.js"></script>
+<script src="bar_fichiers/jquery-ui.min.js"></script>
+<script src="bar_fichiers/bootstrap.min.js"></script>
+<script src="bar_fichiers/sweetalert.min.js"></script>
+<style type="text/css">
+	.swal-button-tpl, .swal-button-tpl:active {
+		background-color: #A89168;
+		border: 1px solid #A89168;
+	}
+</style>
+
+	<link rel="stylesheet" href="bar_fichiers/ol.css" type="text/css">
+<script type="application/ld+json">{  
+    "@context":"http://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Chez Pippo",
+    "url": "https://chezpippo.com/fr",
+    "logo":"https://uniiti.com/",
+    "image":"https://uniiti.com/images/shops/slides/fcbe72b89d3baf582784fac35ce232aca41b79f5.jpeg",    "description":"Bienvenue sur le site de Chez Pippo à Paris. Consultez de vrais avis de vrais clients et réservez gratuitement une table. Réponse immédiate.",
+    "address":"31 Avenue de la Bourdonnais, 75007 Paris, France"
+}</script>        <style type="text/css">
+            header .header-content {
+                                background-image: url(https://uniiti.com/images/shops/slides/fcbe72b89d3baf582784fac35ce232aca41b79f5.jpeg);
+            }
+            /* Template color ****************/
+            /* text color */
+            body header .fixed-bar .header-left .btn-call i,
+            .home-news .news-item .date span,
+            .ft-contact .ft-btn-call i,
+            body header .fixed-bar .header-left .btn-booking,
+            fieldset.live .info-live h3 span,
+            fieldset.live .live-more,
+            .ujob-btn, .ujob-btn:active, .ujob-btn:focus, .ujob-btn:hover
+            {
+                color: #A89168;
+            }
+            /* border color */
+            body header .fixed-bar .header-left .btn-booking,
+            .address-box,
+            .address-box .icon-compass,
+            .home-news .news-item .date,
+            fieldset.live,
+            fieldset.live .info-live h3 span,
+            fieldset.live .live-more
+            {
+                border-color: #A89168;
+            }
+            .who-are h2 hr,
+            .home-opinions h2 hr,
+            .home-news h2 hr,
+            .social-feed h2 hr
+            {
+                border-bottom-color: #A89168;
+            }
+            /* background color */
+            body header .fixed-bar .header-right ul.menu li a span,
+            .links .separator,
+            fieldset.live legend,
+            body header .header-content
+            {
+                background-color: #A89168;
+            }
+                        .btn-waitlist, .btn-waitlist span{
+                background-color: #A89168 !important;
+                border-color: #A89168 !important;
+                color: white;
+            }
+            .btn-privatization, .btn-privatization span{
+                color: #A89168 !important;
+                border-color: #A89168 !important;
+            }
+            .quick-link-waitist, .quick-link-waitist span {
+                background-color: #F9F9F9 !important;
+                border-color: #F9F9F9 !important;
+                color: #535353;
+                
+            }
+            #close-waitlist-box {
+                color: #A89168 !important;
+            }
+                    </style>
+    </head>
+    <body>
+        <header>
+            <div class="fixed-bar">
+                <div class="header-left">
+                                            <a href="https://chezpippo.com/fr"><h1>Chez Pippo</h1></a>
+                                        
+                                                                                                <a href="https://chezpippo.com/fr/booking" class="btn-booking">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>
+                                                                    
+Réserver                                                            </span>
+                        </a>
+                                                                                    <a href="https://usellweb.co/shops/chez-pippo-paris" class="btn-booking btn-order">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Commander</span>
+                        </a>
+                                                                <a href="#" class="btn-waitlist">
+                            <span>Waitlist </span>
+                        </a>
+                     
+                     
+                </div>
+                    <button class="btn-lang toggle-lang">
+        <i class="flag flag-fr" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <ul>
+            <li><a href="https://chezpippo.com/en"><i class="flag flag-en" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/es"><i class="flag flag-es" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/it"><i class="flag flag-it" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/de"><i class="flag flag-de" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/pt"><i class="flag flag-pt" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/zh"><i class="flag flag-zh" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ja"><i class="flag flag-ja" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ru"><i class="flag flag-ru" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ar"><i class="flag flag-ar" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/nl"><i class="flag flag-nl" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ko"><i class="flag flag-ko" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/cs"><i class="flag flag-cs" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/el"><i class="flag flag-el" aria-hidden="true"></i></a></li>        </ul>
+    </button>
+                <div class="header-right">
+                    <ul class="menu">
+    <li class="active"><a href="https://chezpippo.com/fr">Accueil<span></span></a></li>
+                    <li><a href="https://chezpippo.com/fr/gallery">Galerie<span></span></a></li>
+                	<li><a href="https://chezpippo.com/fr/services">
+						    Carte			    	<span></span></a></li>
+            	<li><a href="https://chezpippo.com/fr/opinions">Avis<span></span></a></li>
+                                <li><a href="https://chezpippo.com/fr/custom/traiteur-et-livraison">TRAITEUR et LIVRAISON<span></span></a></li>
+                <li class="last "><a href="https://chezpippo.com/fr/contact">Contact<span></span></a></li>
+</ul>                </div>
+            </div><div class="modal fade" id="shop-waitlist-modal"><div class="content"><div id="close-waitlist-box">X</div><div class="waitlist-loader"><div class="container-loader"><div class="css-loader"></div></div></div></div></div>
+            <div class="header-content">
+                                    <button class="openning-status opened">
+                        <span class="right-bar"></span>
+                        <span class="status"></span>
+                        <span class="text-status" style="width: 0px;">Ouvert aujourd'hui jusqu'à 23:00</span>
+                    </button>
+                                                    <div class="block-info" left="-20px" style="left: -600px;">
+                                                                                    <div class="last-note" style="left: -600px;">
+                                    <a href="https://chezpippo.com/fr/opinions"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                    <h3>Gilles G. a noté</h3>
+                                    <span class="note">5/5</span>
+                                                                        <span class="stars">
+                                                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                        
+            </span>
+                                </div>
+                                <p>Très bon accueil malgré le monde. 
+Service sympatique et efficace.
+La carte est importante avec en plus beaucoup de suggestions du jour.
+Le choix du pâton pour les pizzas est une très bonne idée. Bref tout le 
+monde s'est régalé avec en prime un super vin italien. Nous reviendrons.
+ </p>
+                                                    </div>
+                
+                <a href="https://www.google.com/maps/place/31+Avenue+de+la+Bourdonnais%2C+75007+Paris%2C+France%2C" target="_blank" class="show-map">
+                    <p>Voir sur la carte</p>
+                    <img src="bar_fichiers/icon-map-pointer.png" srcset="bar_fichiers/icon-map-pointer@2x.png 2x, bar_fichiers/icon-map-pointer@3x.png 3x">
+                    <span class="rect-right"></span>
+                </a>
+
+                
+                <div class="gradient-bg">
+                                        <div class="gradient-left">
+                                                    <a href="https://chezpippo.com/fr/opinions">
+                                <span class="stars">
+                                                                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                    </span>
+                                <span class="total-opinions">1069 Avis</span>
+                            </a>
+                                                                            <h2>RESTAURANT ITALIEN &amp; PIZZERIA</h2>
+                                                                            <p>
+                                31 Avenue de la Bourdonnais, 75007 Paris, France<br>
+                                                                                            </p>
+                                            </div>
+                    <div class="gradient-right">
+                        <i class="bd bd-faitmaison" title="Fait Maison"></i>                    </div>
+                </div>
+            </div>
+
+                        <div class="scroll-down-container offset-top">
+                <i class="icon icon-scroll-down-grey scroll-down-btn"></i>
+            </div>
+        </header>
+
+        
+        <div class="header-social-networks">
+                        <ul class="sn-2">
+                <li><a target="_blank" href="https://www.facebook.com/chezpippo/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><li><a target="_blank" href="https://www.instagram.com/chezpippo/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>            </ul>
+        </div>
+        <div class="scroll-down">
+            DÉFILEZ VERS LE BAS        </div>
+
+        <div class="lg-container gray-bg">
+    <div class="inner-container">
+        <div class="links-title">Les liens rapides pour ne pas perdre une seconde</div>
+        <div class="links">
+                            <a href="https://usellweb.co/shops/chez-pippo-paris"><i class="illu illu-order"></i><span>Commander</span></a><span class="separator"></span><a href="https://chezpippo.com/fr/booking"><i class="illu illu-reserver"></i><span>Réserver</span></a><span class="separator"></span><a href="#" class="btn-booking btn-waitlist quick-link-waitist"><i class="illu illu-waitlist"></i><span>Waitlist</span></a><span class="separator"></span><a href="https://maps.google.com/?q=31%20Avenue%20de%20la%20Bourdonnais,%2075007%20Paris,%20France" target="_blank"><i class="illu illu-itineraire"></i><span>Itinéraire</span></a>                    </div>
+    </div>
+
+        
+    <div class="inner-container who-are">
+        <h2>Qui sommes-nous ?<hr></h2>
+        <div class="who-are-container">
+            <p></p><h3 style="text-align: center;"><span style="font-size: 18px;"><strong>V</strong>otre restaurant «&nbsp;<span class="il">Chez</span>&nbsp;<span class="il">Pippo</span>&nbsp;» passe en mode traiteur avec livraison du lundi au dimanche.</span></h3>
+<div><span style="font-size: 18px;">&nbsp;</span></div>
+<p><span style="font-size: 18px;">Offrez un&nbsp;<strong>voyage en Italie</strong>&nbsp;à vos proches avec les&nbsp;<strong>paniers cadeaux de Noël&nbsp;</strong>de&nbsp;<span class="il">Chez</span>&nbsp;<span class="il">Pippo</span>&nbsp;<strong>!</strong></span></p>
+<p><span style="font-size: 18px;"><strong><br>Composez vous-même vos paniers parmi une centaine d’articles ou optez pour nos paniers prédéfinis!</strong></span></p>
+<p><span style="font-size: 18px;"><strong>Livraisons&nbsp;</strong>des Paniers et des vins<strong>&nbsp;sous 48h</strong>&nbsp;partout en France&nbsp;<strong>via UPS</strong></span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+<p><span style="font-size: 18px;"><a title="CLIQUEZ SUR CE LIEN POUR ACCEDER A CHEZ PIPPO TRAITEUR" href="https://chezpippotraiteur.com/">CLIQUEZ SUR CE LIEN POUR ACCEDER A CHEZ PIPPO TRAITEUR</a></span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+<p><span style="font-size: 18px;">Retrouvez nos pizzas, pâtes, risottos et tous autres articles pour votre quotidien.</span></p>
+<p><span style="font-size: 18px;">En&nbsp;<strong>click n collect</strong>&nbsp;ou en livraison&nbsp;<strong>UberEATS</strong>,&nbsp;<strong>Deliveroo</strong>&nbsp;<wbr>et&nbsp;<strong>Just Eat</strong>.</span><br><span style="font-size: 18px;">L’Italie est en bas de&nbsp;<span class="il">chez</span>&nbsp;vous, alors n’attendez pas!</span></p>
+<p><span style="font-size: 18px;">Du lundi au dimanche de 10h à 22h00</span></p>
+<p><span style="font-size: 18px;">Veuillez noter un délai de 30mn après chaque commande.</span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+<p><span style="font-size: 18px;"><a title="CLIQUEZ SUR CE LIEN POUR ACCEDER A CHEZ PIPPO RESTAURANT CLICK AND COLLECT &amp; LIVRAISON" href="https://usellweb.co/shops/chez-pippo-paris">CLIQUEZ SUR CE LIEN POUR ACCEDER A CHEZ PIPPO RESTAURANT CLICK AND COLLECT &amp; LIVRAISON</a></span></p><p></p>
+        </div>
+    </div>
+</div>
+
+    <div class="lg-container">
+        <div class="inner-container home-opinions">
+            <h2>Les derniers avis<hr></h2>
+
+            <div id="carousel-opinions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                                                                        <div class="item">
+                                <h3>Gilles G. a noté</h3>
+                                <span class="note">5/5</span>
+                                                                <span class="stars">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                    </span>
+                                <p>Très bon accueil malgré le monde. 
+Service sympatique et efficace.
+La carte est importante avec en plus beaucoup de suggestions du jour.
+Le choix du pâton pour les pizzas est une très bonne idée. Bref tout le 
+monde s'est régalé avec en prime un super vin italien. Nous reviendrons.
+ </p>
+                            </div>
+                                                                                                <div class="item">
+                                <h3>Alice H. a noté</h3>
+                                <span class="note">5/5</span>
+                                                                <span class="stars">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                    </span>
+                                <p>Accueil extra et aux petits soins, 
+très bon dans l'assiette, on n'est jamais déçus ! Pensez à réserver à 
+l'avance, les places partent vite ;)
+Alice, déjeuner du 11/01/2023</p>
+                            </div>
+                                                                                                <div class="item">
+                                <h3>Magali J. a noté</h3>
+                                <span class="note">5/5</span>
+                                                                <span class="stars">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                    </span>
+                                <p></p>
+                            </div>
+                                                                                                <div class="item active">
+                                <h3>Olga E. a noté</h3>
+                                <span class="note">1/5</span>
+                                                                <span class="stars">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                        
+    <i class="fa fa-star empty" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star empty" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star empty" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star empty" aria-hidden="true"></i>
+                                                                    </span>
+                                <p>They put tables too close to each other.
+Not comfortable. The people that was sitting next to me were rude and judgmental. The meat was hard to eat. </p>
+                            </div>
+                                                                                                <div class="item ">
+                                <h3>Gaetan  B. a noté</h3>
+                                <span class="note">5/5</span>
+                                                                <span class="stars">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        
+                                                                    </span>
+                                <p></p>
+                            </div>
+                                                                        
+                                                                        
+                                                                        
+                                                                </div>
+
+                <a class="carousel-left" href="#carousel-opinions" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-right" href="#carousel-opinions" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <a href="https://chezpippo.com/fr/opinions" class="btn-grey">Voir plus d'avis</a>
+        </div>
+    </div>
+
+<div class="lg-container gray-bg overflow-auto">
+    <div class="inner-container">
+        <div class="home-map">
+            <div id="map"><div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%; touch-action: none;" data-view="10"><canvas style="width: 100%; height: 100%; display: block;" class="ol-unselectable" width="1133" height="453"></canvas><div class="ol-overlaycontainer"></div><div class="ol-overlaycontainer-stopevent"></div></div></div>
+        </div>
+        <div class="address-box">
+            <i class="icon-compass"></i>
+            <address>
+                31 Avenue de la Bourdonnais, 75007 Paris, France<br>
+                                            </address>
+            <div>
+                <div class="block-times">
+                    Lundi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+
+                    Mardi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+
+                    Mercredi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+
+                    Jeudi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+                    
+                    Vendredi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+
+                    Samedi 
+                    <b>
+                                            11h30 - 23h                                        </b><br>
+
+                    Dimanche 
+                    <b>
+                                            11h30 - 23h                                        </b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lg-container">
+    <div class="inner-container ft-newsletter">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Suivez toute l'actualité de Chez Pippo</h3>
+                <div class="social">
+                    <a target="_blank" href="https://www.facebook.com/chezpippo/"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a> / <a target="_blank" href="https://www.instagram.com/chezpippo/"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></a>                </div>
+            </div>
+                            <div class="col-sm-6">
+                    <p>Inscrivez-vous à notre newsletter et restez informés des prochains évènements et promotions.</p>
+                    <form>
+                        <input type="text" id="home-email-newsletter" placeholder="Votre Email…">
+                        <button type="button" class="save-email-newsletter" email-input="home-email-newsletter">OK</button>
+                    </form>
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+
+
+        
+        <div class="lg-container f-gray-bg">
+    <div class="inner-container">
+        <div class="ref-title">Vous pouvez aussi nous retrouver sur…</div>
+        <div class="references">
+            <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d13976284-Reviews-Chez_Pippo-Paris_Ile_de_France.html"><i class="bd bd-tripadvisor-grey" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trip Advisor"></i></a> / <a target="_blank" href="https://www.yelp.com/biz/chez-pippo-paris"><i class="bd bd-yelp-grey" data-toggle="tooltip" data-placement="top" title="" data-original-title="Yelp"></i></a> / <a target="_blank" href="https://uniiti.com/shop/chez-pippo"><i class="bd bd-uniiti-grey" data-toggle="tooltip" data-placement="top" title="" data-original-title="Uniiti"></i></a> / <a target="_blank" href="https://www.pagesjaunes.fr/pros/57921412"><i class="bd bd-pagesjaunes-grey" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pages Jaunes"></i></a>        </div>
+    </div>
+</div>
+
+<div class="lg-container lg-container-initial">
+    <div class="inner-container clearfix">
+        <div class="row">
+            <div class="col-sm-3 ft-contact">
+                <h3>Chez Pippo</h3>
+                <p>31 Avenue de la Bourdonnais, 75007 Paris, France <br>  </p>
+                                    <a href="tel:+33173705450" class="ft-btn-call">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>+33173705450</span>
+                    </a>
+                
+                                <button class="ft-btn-lang toggle-lang">
+                    <i class="flag flag-fr" aria-hidden="true"></i>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="https://chezpippo.com/en"><i class="flag flag-en" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/es"><i class="flag flag-es" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/it"><i class="flag flag-it" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/de"><i class="flag flag-de" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/pt"><i class="flag flag-pt" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/zh"><i class="flag flag-zh" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ja"><i class="flag flag-ja" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ru"><i class="flag flag-ru" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ar"><i class="flag flag-ar" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/nl"><i class="flag flag-nl" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/ko"><i class="flag flag-ko" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/cs"><i class="flag flag-cs" aria-hidden="true"></i></a></li><li><a href="https://chezpippo.com/el"><i class="flag flag-el" aria-hidden="true"></i></a></li>                    </ul>
+                </button>
+                            </div>
+            <div class="col-sm-3 ft-menu">
+                <ul>
+                    <li class="active"><a href="https://chezpippo.com/fr">Accueil</a></li>
+                                                                                    <li><a href="https://chezpippo.com/fr/gallery">Galerie</a></li>
+                                                                <li><a href="https://chezpippo.com/fr/services">
+                                                            Carte                                                    </a></li>
+                                                                <li><a href="https://chezpippo.com/fr/opinions">Avis</a></li>
+                                                            <li><a href="https://chezpippo.com/fr/contact">Contact</a></li>
+                    <li class="last "><a href="https://chezpippo.com/fr/legal-notice">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 ft-newsletter left-border">
+                <h3>Suivez toute l'actualité de Chez Pippo</h3>
+                <div class="social">
+                    <a target="_blank" href="https://www.facebook.com/chezpippo/"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a> / <a target="_blank" href="https://www.instagram.com/chezpippo/"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></a>                </div>
+                                    <p>Inscrivez-vous à notre newsletter et restez informés des prochains évènements et promotions.</p>
+                    <form>
+                        <input type="text" id="ft-email-newsletter" placeholder="Votre Email…">
+                        <button type="button" class="save-email-newsletter" email-input="ft-email-newsletter">OK</button>
+                    </form>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="ft-container">
+        <div class="copyright">
+            © Copyright 2023 - Chez Pippo - tous droits réservés        </div>
+        <div class="realized-by">
+            <span>Par <a href="https://uniiti.com/" target="_blank">uniiti.com</a></span>
+            <span class="icon-eiffeltower"><img src="bar_fichiers/icon-eiffeltower.png" srcset="bar_fichiers/icon-eiffeltower@2x.png 2x, bar_fichiers/icon-eiffeltower@3x.png 3x"></span>
+            <span>à</span>
+            <span class="icon-heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
+            <span>Site réalisé avec</span>
+        </div>
+    </div>
+</footer>
+
+<div id="scrolltotop" class="hidden">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    Haut de page</div>        <script type="text/javascript">
+    var shop = {
+            address: "31 Avenue de la Bourdonnais, 75007 Paris, France ",
+            lat: "48.8588961",
+            lng: "2.2985582",
+            url: "https://uniiti.com/api/shop/analytics/collect/1485",
+            bookingUrl: "https://booking.ureserve.co/shop/booking/1485/chez-pippo?external=true&lang_code=fr",
+            newsletterUrl: "https://uniiti.com/shop/newsletter-subscription/1485",
+            waitlistUrl: "https://booking.ureserve.co/shop/waitlist/chez-pippo/join-page?isExternal=true&lang_code=fr",
+        };
+</script>
+<script src="bar_fichiers/common.min.js"></script>
+	<script src="bar_fichiers/ol.js" type="text/javascript"></script>
+	<script src="bar_fichiers/map.min.js"></script>
+
+    <iframe src="bar_fichiers/chez-pippo.htm" class="hidden"></iframe>
+
+
+        
+        
+    
+</body></html>

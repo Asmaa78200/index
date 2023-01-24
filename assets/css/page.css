@@ -1,0 +1,191 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+header #en-tete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header #logo {
+    width: 250px;
+    height: auto;
+}
+header #nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header #nav li {
+    margin: 0 20px;
+}
+header #nav li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+header #nav li a:hover {
+    color: #007bff;
+}
+/* Main content styles */
+#main-content {
+    margin-top: 80px;
+    padding: 20px;
+}
+#main-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.center-text-parent{
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px auto;
+    width: 97%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+        line-height: 200%; /* This will add 150% of the font size as line spacing */
+
+}
+.img {
+    width: 1979px;
+    height: 500px;
+}
+/* Carte styles */
+.Carte {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 1000px;
+    text-align: left;
+    font-weight: bold; 
+}
+.Carte h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+.Carte h4 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold; 
+}
+.Carte .price {
+    font-size: 20px;
+    float: right;
+    font-weight: bold; 
+}
+.Carte p {
+    font-size: 20px;
+    color: #DF9238; /* or any other color value */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.container {
+    margin-bottom: 20px;
+    margin-top:150px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 25%;
+    width: 1000px;
+}
+.container h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container hr {
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid blue;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+/* Footer styles */
+
+footer p {
+    margin: 0;
+}
+/* Footer Navigation styles */
+.footer-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.footer-nav li {
+    margin: 0 20px;
+}
+.footer-nav li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.footer-nav li a:hover {
+    color: #007bff;
+}
+.footer-nav li a:active{
+    color: #ff0000;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#DF9238;
+    color: #fff;
+    padding: 10px;
+}
+
+.left-content {
+    justify-content: flex-start;
+}
+
+.right-content {
+    justify-content: right;
+}
+
+.center-content {
+    justify-content: center;
+}
+
+.left-content, .center-content, .right-content {
+    width: 25%;
+    height: 100%;
+}
